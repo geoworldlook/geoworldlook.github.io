@@ -57,6 +57,10 @@ nav ul li a {
 
 main {
     padding: 20px;
+    p {
+    text-align: justify;
+}
+
 }
 
 section {
