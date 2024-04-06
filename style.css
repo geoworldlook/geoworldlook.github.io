@@ -1,23 +1,59 @@
 
-/* Dotychczasowe style + */
-
-.tab, .sub-tab {
-    cursor: pointer;
-    padding: 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 5px;
+/* Reset podstawowych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.tab:hover, .sub-tab:hover {
-    background-color: #f0f0f0;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styl dla zakładek */
+.tab, .sub-tab {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab:hover, .sub-tab:hover, .tab.active, .sub-tab.active {
+    background-color: #ddd;
+    border-bottom: 2px solid #333;
 }
 
 .content, .sub-content {
     display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
 }
 
-.active {
+.content.active, .sub-content.active {
     display: block;
 }
