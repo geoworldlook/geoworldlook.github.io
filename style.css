@@ -1,59 +1,33 @@
-
-/* Reset podstawowych stylów */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 1rem 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+body {font-family: Arial;}
 
 /* Styl dla zakładek */
-.tab, .sub-tab {
+.tablinks {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
     cursor: pointer;
-    padding: 10px 15px;
-    background-color: #f4f4f4;
     border: none;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
+    outline: none;
+    transition: background-color 0.3s;
 }
 
-.tab:hover, .sub-tab:hover, .tab.active, .sub-tab.active {
-    background-color: #ddd;
-    border-bottom: 2px solid #333;
+.tablinks:hover {
+    background-color: #777;
 }
 
-.content, .sub-content {
+/* Styl dla aktywnej zakładki */
+.tablinks.active {
+    background-color: #333;
+}
+
+/* Styl dla zawartości zakładki */
+.tabcontent {
     display: none;
     padding: 20px;
-    border: 1px solid #ccc;
-    margin-top: 20px;
+    border-top: none;
 }
 
-.content.active, .sub-content.active {
+/* Styl dla aktywnej zawartości */
+.tabcontent.active {
     display: block;
 }
