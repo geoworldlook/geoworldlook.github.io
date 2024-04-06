@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -11,45 +12,31 @@
 <header>
     <h1>Projekt OZE</h1>
     <nav>
-        <ul>
-            <li><a href="#projekt">Projekt</a></li>
-            <li><a href="#wprowadzenie">Wprowadzenie</a></li>
-            <li><a href="#o-mnie">O mnie</a></li>
-            <li><a href="#identyfikacja-lokalizacji">Identyfikacja lokalizacji</a></li> <!-- Nowa zakładka -->
+        <ul id="tab-list">
+            <li class="tab" data-target="wprowadzenie">Wprowadzenie</li>
+            <li class="tab" data-target="identyfikacja-lokalizacji">Identyfikacja lokalizacji</li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section id="projekt">
-        <h2>Projekt</h2>
-        <p>Tutaj znajduje się opis projektu...</p>
-    </section>
-
-    <section id="wprowadzenie">
+    <div id="wprowadzenie" class="content active">
         <h2>Wprowadzenie</h2>
-        <p>W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii, projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce, z naciskiem na energetykę słoneczną (farmy fotowoltaiczne) i wiatrową (farmy wiatrowe). Kluczowym elementem projektu jest wykorzystanie zaawansowanych danych przestrzennych GIS oraz modeli danych o nasłonecznieniu z Copernicus ERA5 i danych o sile wiatru, aby zlokalizować optymalne obszary pod kątem technologicznym, ekonomicznym i środowiskowym do rozwijania infrastruktury OZE.
+        <!-- Treść wprowadzenia... -->
+    </div>
 
-Projekt ma na celu kompleksową analizę różnych scenariuszy wykorzystania OZE, uwzględniając aktualne przepisy prawne, koszty budowy, rentowność oraz efektywność energetyczną. Poszukiwane obszary muszą odpowiadać nie tylko na potrzeby energetyczne kraju, ale także harmonizować z lokalnymi uwarunkowaniami środowiskowymi i społecznymi.
-
-W ramach projektu przeprowadzona zostanie szczegółowa ocena techniczna i ekonomiczna, mająca na celu identyfikację najlepszych rozwiązań dla polskiej energetyki, które będą mogły zapewnić zrównoważony rozwój oraz maksymalizację efektywności kosztowej i wydajnościowej. Ostatecznym celem jest przedstawienie rekomendacji dotyczących rozmieszczenia i rozwijania infrastruktury OZE w Polsce, która będzie odpowiadać na przyszłe zapotrzebowanie energetyczne kraju, minimalizując jednocześnie negatywny wpływ na środowisko.
-
-Analiza zostanie wsparta zaawansowanymi technikami modelowania i symulacji, co pozwoli na dokładne przewidywanie wydajności instalacji OZE w różnych warunkach oraz ocenę ich wpływu na sieć energetyczną. Przez integrację danych przestrzennych z naukowymi metodami analizy, projekt ma ambicję stać się punktem odniesienia dla przyszłych inwestycji w sektorze OZE w Polsce.</p>
-    </section>
-
-    <section id="identyfikacja-lokalizacji">
+    <div id="identyfikacja-lokalizacji" class="content">
         <h2>Identyfikacja lokalizacji dla instalacji solarnych</h2>
-        <ol>
-            <li>Selekcja odpowiednich warstw danych z BDOT</li>
-            <li>Integracja warstw danych</li>
-            <li>Analiza ekspozycji terenu</li>
-            <li>Konwersja danych rastrowych na wektorowe</li>
-            <li>Filtracja danych pod kątem ekspozycji i powierzchni</li>
-            <li>Analiza dostępności infrastruktury energetycznej</li>
-            <li>Obliczenie odległości do linii średniego napięcia</li>
-            <li>Filtracja końcowa i analiza dostępu do dróg</li>
-        </ol>
-    </section>
+        <!-- Treść identyfikacji lokalizacji... -->
+        <ul id="sub-tab-list">
+            <li class="sub-tab" data-target="step1">Selekcja odpowiednich warstw danych z BDOT</li>
+            <!-- Kolejne kroki... -->
+        </ul>
+        <div id="step1" class="sub-content active">
+            <!-- Treść kroku 1 -->
+        </div>
+        <!-- Kontenery dla kolejnych kroków... -->
+    </div>
 </main>
 
 <footer>
