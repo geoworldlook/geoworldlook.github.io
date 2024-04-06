@@ -1,109 +1,23 @@
-:root {
-    --primary-color: #5E81AC; /* Niebieski */
-    --background-color: #ECEFF4; /* Jasny */
-    --text-color: #2E3440; /* Ciemny */
-    --footer-background-color: #4C566A; /* Ciemniejszy niebieski */
-    --link-color: #BF616A; /* Czerwony */
-}
 
-[data-theme="dark"] {
-    --primary-color: #4C566A; /* Ciemniejszy niebieski */
-    --background-color: #2E3440; /* Ciemny */
-    --text-color: #ECEFF4; /* Jasny */
-    --footer-background-color: #3B4252; /* Jeszcze ciemniejszy niebieski */
-    --link-color: #BF616A; /* Czerwony */
-}
-/* Reset podstawowych stylów */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-p {
-    text-align: justify;
-}
+/* Dotychczasowe style + */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-header {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    p {
-    text-align: justify;
-}
-
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    color: var(--primary-color);
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-/* Stopka */
-footer {
-    background-color: var(--footer-background-color);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Przełącznik trybu ciemnego/jasnego */
-.toggle-theme {
-    font-size: 0.9rem;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+.tab, .sub-tab {
     cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
-/* Responsywność */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
+.tab:hover, .sub-tab:hover {
+    background-color: #f0f0f0;
+}
+
+.content, .sub-content {
+    display: none;
+}
+
+.active {
+    display: block;
 }
