@@ -1,27 +1,18 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Funkcja do obsługi zmiany aktywnych zakładek i zawartości
-    function handleTabChange(tabGroup, contentGroup, activeClass = 'active') {
-        tabGroup.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetId = tab.getAttribute('data-target');
-                const targetContent = document.getElementById(targetId);
-                
-                contentGroup.forEach(c => c.classList.remove(activeClass));
-                tabGroup.forEach(t => t.classList.remove(activeClass));
-                
-                tab.classList.add(activeClass);
-                targetContent.classList.add(activeClass);
-            });
-        });
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
-    
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.content');
-    handleTabChange(tabs, contents);
-    
-    // Dla sub-tabów
-    const subTabs = document.querySelectorAll('.sub-tab');
-    const subContents = document.querySelectorAll('.sub-content');
-    handleTabChange(subTabs, subContents);
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Otwórz domyślnie pierwszą zakładkę
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("defaultOpen").click();
 });
