@@ -35,7 +35,37 @@
         <div id="step1" class="sub-content active">
             <!-- Treść kroku 1 -->
         </div>
-        <!-- Kontenery dla kolejnych kroków... -->
+        
+    <div id="step2" class="sub-content">
+        <h3>2. Integracja warstw danych</h3>
+        <p>Następnie zintegrowałem wybrane warstwy danych w jednolitą warstwę, co umożliwiło efektywniejszą analizę i wizualizację potencjalnych lokalizacji dla OZE na mapie.</p>
+    </div>
+
+    <div id="step3" class="sub-content">
+        <h3>3. Analiza ekspozycji terenu</h3>
+        <p>Wykorzystując Numeryczny Model Terenu (NMT) pobrany z GEOPORTALU, przeprowadziłem analizę ekspozycji terenu. Celem było zidentyfikowanie obszarów z ekspozycją południową, południowo-wschodnią oraz południowo-zachodnią, które są optymalne dla instalacji fotowoltaicznych.</p>
+    </div>
+    <div id="step4" class="sub-content">
+        <h3>4. Konwersja danych rastrowych na wektorowe</h3>
+        <p>Przekształciłem dane rastrowe dotyczące ekspozycji terenu na format wektorowy, co umożliwiło dokładniejszą analizę i selekcję obszarów spełniających kryteria ekspozycji w stopniach 215-315.</p>
+    </div>
+    <div id="step5" class="sub-content">
+        <h3>5. Filtracja danych pod kątem ekspozycji i powierzchni</h3>
+        <p>Zastosowałem filtrację danych, aby wyselekcjonować tereny spełniające kryteria ekspozycji oraz minimalną powierzchnię 2 hektary, co jest kluczowe dla ekonomicznej wydajności projektów OZE.</p>
+    </div>
+    <div id="step6" class="sub-content">
+        <h3>6. Analiza dostępności infrastruktury energetycznej</h3>
+        <p>W kolejnym kroku wczytałem warstwę BDOT zawierającą linie wysokiego napięcia (SULN_L), aby zidentyfikować linie średniego napięcia jako potencjalne punkty podłączenia instalacji OZE.</p>
+    </div>
+    <div id="step7" class="sub-content">
+        <h3>7. Obliczenie odległości do linii średniego napięcia</h3>
+        <p>Przeprowadziłem obliczenia odległości od wyselekcjonowanych działek do najbliższych linii średniego napięcia, ustawiając maksymalną akceptowalną odległość na 500 metrów, aby zminimalizować koszty podłączenia.</p>
+    </div>
+    <div id="step8" class="sub-content">
+        <h3>8. Filtracja końcowa i analiza dostępu do dróg</h3>
+        <p>Na koniec, dokonałem końcowej filtracji danych, biorąc pod uwagę dostępność dróg oraz inne czynniki logistyczne, aby zapewnić najlepsze warunki dla potencjalnej budowy i eksploatacji instalacji OZE.</p>
+    </div>
+<!-- Kontenery dla kolejnych kroków... -->
     </div>
 </main>
 
