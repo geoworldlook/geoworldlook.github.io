@@ -17,15 +17,31 @@
     </aside>
     <section class="content">
         <article id="wprowadzenie" class="tabcontent">
-            <h2>Wprowadzenie do projektu</h2>
-            <p style="text-align: justify;">W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii, projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce, z naciskiem na energetykę słoneczną (farmy fotowoltaiczne) i wiatrową (farmy wiatrowe). Kluczowym elementem projektu jest wykorzystanie zaawansowanych danych przestrzennych GIS oraz modeli danych o nasłonecznieniu z Copernicus ERA5 i danych o sile wiatru, aby zlokalizować optymalne obszary pod kątem technologicznym, ekonomicznym i środowiskowym do rozwijania infrastruktury OZE.</p>
-        </article>
-        <article id="etap1" class="tabcontent">
-            <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
-            <p><strong>1. Selekcja odpowiednich warstw danych z BDOT:</strong> Na wstępie projektu przeprowadziłem selekcję warstw danych z bazy danych BDOT, skupiając się na identyfikacji obszarów potencjalnie nadających się pod instalacje OZE. Priorytetem były warstwy reprezentujące roślinność trawiastą (PTTR_A), tereny nieurządzone (PTGN) oraz tereny skaliste (PTRK). Ta selekcja pozwoliła na zawężenie obszaru poszukiwań do lokalizacji spełniających podstawowe kryteria przydatności pod OZE.</p>
-            <p><strong>2. Integracja warstw danych:</strong> Następnie zintegrowałem wybrane warstwy danych w jednolitą warstwę, co umożliwiło efektywniejszą analizę i wizualizację potencjalnych lokalizacji dla OZE na mapie.</p>
-            <!-- Kontynuuj formatowanie dla kolejnych punktów -->
-        </article>
+    <h2>Wprowadzenie do projektu</h2>
+    <p style="text-align: justify;">
+        W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii, projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce, z naciskiem na energetykę słoneczną (farmy fotowoltaiczne) i wiatrową (farmy wiatrowe). Kluczowym elementem projektu jest wykorzystanie zaawansowanych danych przestrzennych GIS oraz modeli danych o nasłonecznieniu z Copernicus ERA5 i danych o sile wiatru, aby zlokalizować optymalne obszary pod kątem technologicznym, ekonomicznym i środowiskowym do rozwijania infrastruktury OZE.
+    </p>
+    <p style="text-align: justify;">
+        Projekt ma na celu kompleksową analizę różnych scenariuszy wykorzystania OZE, uwzględniając aktualne przepisy prawne, koszty budowy, rentowność oraz efektywność energetyczną. Poszukiwane obszary muszą odpowiadać nie tylko na potrzeby energetyczne kraju, ale także harmonizować z lokalnymi uwarunkowaniami środowiskowymi i społecznymi.
+    </p>
+    <p style="text-align: justify;">
+        W ramach projektu przeprowadzona zostanie szczegółowa ocena techniczna i ekonomiczna, mająca na celu identyfikację najlepszych rozwiązań dla polskiej energetyki, które będą mogły zapewnić zrównoważony rozwój oraz maksymalizację efektywności kosztowej i wydajnościowej. Ostatecznym celem jest przedstawienie rekomendacji dotyczących rozmieszczenia i rozwijania infrastruktury OZE w Polsce, która będzie odpowiadać na przyszłe zapotrzebowanie energetyczne kraju, minimalizując jednocześnie negatywny wpływ na środowisko.
+    </p>
+    <p style="text-align: justify;">
+        Analiza zostanie wsparta zaawansowanymi technikami modelowania i symulacji, co pozwoli na dokładne przewidywanie wydajności instalacji OZE w różnych warunkach oraz ocenę ich wpływu na sieć energetyczną. Przez integrację danych przestrzennych z naukowymi metodami analizy, projekt ma ambicję stać się punktem odniesienia dla przyszłych inwestycji w sektorze OZE w Polsce.
+    </p>
+</article>
+<article id="etap1" class="tabcontent">
+    <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
+    <p><strong>1. Selekcja odpowiednich warstw danych z BDOT:</strong> Na wstępie projektu przeprowadziłem selekcję warstw danych z bazy danych BDOT, skupiając się na identyfikacji obszarów potencjalnie nadających się pod instalacje OZE. Priorytetem były warstwy reprezentujące roślinność trawiastą (PTTR_A), tereny nieurządzone (PTGN) oraz tereny skaliste (PTRK). Ta selekcja pozwoliła na zawężenie obszaru poszukiwań do lokalizacji spełniających podstawowe kryteria przydatności pod OZE.</p>
+    <p><strong>2. Integracja warstw danych:</strong> Następnie zintegrowałem wybrane warstwy danych w jednolitą warstwę, co umożliwiło efektywniejszą analizę i wizualizację potencjalnych lokalizacji dla OZE na mapie.</p>
+    <p><strong>3. Analiza ekspozycji terenu:</strong> Wykorzystując Numeryczny Model Terenu (NMT) pobrany z GEOPORTALU, przeprowadziłem analizę ekspozycji terenu. Celem było zidentyfikowanie obszarów z ekspozycją południową, południowo-wschodnią oraz południowo-zachodnią, które są optymalne dla instalacji fotowoltaicznych.</p>
+    <p><strong>4. Konwersja danych rastrowych na wektorowe:</strong> Przekształciłem dane rastrowe dotyczące ekspozycji terenu na format wektorowy, co umożliwiło dokładniejszą analizę i selekcję obszarów spełniających kryteria ekspozycji w stopniach 215-315.</p>
+    <p><strong>5. Filtracja danych pod kątem ekspozycji i powierzchni:</strong> Zastosowałem filtrację danych, aby wyselekcjonować tereny spełniające kryteria ekspozycji oraz minimalną powierzchnię 2 hektary, co jest kluczowe dla ekonomicznej wydajności projektów OZE.</p>
+    <p><strong>6. Analiza dostępności infrastruktury energetycznej:</strong> W kolejnym kroku wczytałem warstwę BDOT zawierającą linie wysokiego napięcia (SULN_L), aby zidentyfikować linie średniego napięcia jako potencjalne punkty podłączenia instalacji OZE.</p>
+    <p><strong>7. Obliczenie odległości do linii średniego napięcia:</strong> Przeprowadziłem obliczenia odległości od wyselekcjonowanych działek do najbliższych linii średniego napięcia, ustawiając maksymalną akceptowalną odległość na 500 metrów, aby zminimalizować koszty podłączenia.</p>
+    <p><strong>8. Filtracja końcowa i analiza dostępu do dróg:</strong> Na koniec, dokonałem końcowej filtracji danych, biorąc pod uwagę dostępność dróg oraz inne czynniki logistyczne, aby zapewnić najlepsze warunki dla potencjalnej budowy i eksploatacji instalacji OZE.</p>
+</article>
     </section>
 </div>
 
