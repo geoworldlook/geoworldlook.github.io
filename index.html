@@ -2,21 +2,29 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt OZE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="tabs">
-        <button class="tablinks active" onclick="openTab(event, 'Etap1')">Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</button>
-    </div>
 
-    <div id="Etap1" class="tabcontent active">
-        <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
-        <p>1. Selekcja odpowiednich warstw danych z BDOT...</p>
-        <p>2. Integracja warstw danych...</p>
-        <!-- Dodaj tutaj kolejne punkty i opisy -->
-    </div>
+<div class="sidebar">
+    <button class="tablinks" onclick="openTab(event, 'Wprowadzenie')" id="defaultOpen">Wprowadzenie</button>
+    <button class="tablinks" onclick="openTab(event, 'Etap1')">Etap 1: Potencjalne miejsca...</button>
+    <!-- Dodaj więcej zakładek zgodnie z potrzebami -->
+</div>
 
-    <script src="script.js"></script>
+<div id="Wprowadzenie" class="tabcontent">
+    <h2>Wprowadzenie do projektu</h2>
+    <p>Tutaj umieść wprowadzenie do swojego projektu...</p>
+</div>
+
+<div id="Etap1" class="tabcontent">
+    <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
+    <p>1. Selekcja odpowiednich warstw danych z BDOT...</p>
+    <!-- Dodaj kolejne punkty i opisy -->
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
