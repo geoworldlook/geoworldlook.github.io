@@ -1,18 +1,18 @@
-function openTab(evt, cityName) {
-    var i, tabcontent, tablinks;
+function changeTab(evt, tabName) {
+    var i, tabcontent, tab;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+        tab[i].className = tab[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-// Domyślnie otwarta zakładka
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("defaultOpen").click();
-});
+// Aktywuj pierwszą zakładkę domyślnie
+window.onload = function() {
+    document.getElementsByClassName("tab")[0].click();
+};
