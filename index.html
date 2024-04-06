@@ -8,21 +8,24 @@
 </head>
 <body>
 
-<div class="sidebar">
-    <button class="tablinks" onclick="openTab(event, 'Wprowadzenie')" id="defaultOpen">Wprowadzenie</button>
-    <button class="tablinks" onclick="openTab(event, 'Etap1')">Etap 1: Potencjalne miejsca...</button>
-    <!-- Dodaj więcej zakładek zgodnie z potrzebami -->
-</div>
-
-<div id="Wprowadzenie" class="tabcontent">
-    <h2>Wprowadzenie do projektu</h2>
-    <p>Tutaj umieść wprowadzenie do swojego projektu...</p>
-</div>
-
-<div id="Etap1" class="tabcontent">
-    <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
-    <p>1. Selekcja odpowiednich warstw danych z BDOT...</p>
-    <!-- Dodaj kolejne punkty i opisy -->
+<div class="container">
+    <aside class="sidebar">
+        <ul class="tablist">
+            <li class="tab" onclick="changeTab(event, 'wprowadzenie')">Wprowadzenie</li>
+            <li class="tab" onclick="changeTab(event, 'etap1')">Etap 1: Potencjalne miejsca...</li>
+        </ul>
+    </aside>
+    <section class="content">
+        <article id="wprowadzenie" class="tabcontent">
+            <h2>Wprowadzenie do projektu</h2>
+            <p>Tutaj umieść wprowadzenie do swojego projektu...</p>
+        </article>
+        <article id="etap1" class="tabcontent">
+            <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
+            <p>1. Selekcja odpowiednich warstw danych z BDOT...</p>
+            <!-- Dodaj kolejne punkty i opisy -->
+        </article>
+    </section>
 </div>
 
 <script src="script.js"></script>
