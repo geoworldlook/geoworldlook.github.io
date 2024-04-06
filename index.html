@@ -2,32 +2,30 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Strona wzorcowa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt OZE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <!-- Miejsce na logo -->
-    <span>LOGO</span>
-</div>
-
-<div class="sidebar">
-    <ul>
-        <li onclick="changeTab('tab1')">Zakładka 1</li>
-        <li onclick="changeTab('tab2')">Zakładka 2</li>
-        <li onclick="changeTab('tab3')">Zakładka 3</li>
-        <li onclick="changeTab('tab4')">Zakładka 4</li>
-        <li onclick="changeTab('tab5')">Zakładka 5</li>
-    </ul>
-</div>
-
-<div class="content">
-    <div id="tab1" class="tab-content">Treść zakładki 1. [Miejsce do uzupełnienia]</div>
-    <div id="tab2" class="tab-content">Treść zakładki 2. [Miejsce do uzupełnienia]</div>
-    <div id="tab3" class="tab-content">Treść zakładki 3. [Miejsce do uzupełnienia]</div>
-    <div id="tab4" class="tab-content">Treść zakładki 4. [Miejsce do uzupełnienia]</div>
-    <div id="tab5" class="tab-content">Treść zakładki 5. [Miejsce do uzupełnienia]</div>
+<div class="container">
+    <aside class="sidebar">
+        <ul class="tablist">
+            <li class="tab" onclick="changeTab(event, 'wprowadzenie')">Wprowadzenie</li>
+            <li class="tab" onclick="changeTab(event, 'etap1')">Etap 1: Potencjalne miejsca...</li>
+        </ul>
+    </aside>
+    <section class="content">
+        <article id="wprowadzenie" class="tabcontent">
+            <h2>Wprowadzenie do projektu</h2>
+            <p>Tutaj umieść wprowadzenie do swojego projektu...</p>
+        </article>
+        <article id="etap1" class="tabcontent">
+            <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
+            <p>1. Selekcja odpowiednich warstw danych z BDOT...</p>
+            <!-- Dodaj kolejne punkty i opisy -->
+        </article>
+    </section>
 </div>
 
 <script src="script.js"></script>
