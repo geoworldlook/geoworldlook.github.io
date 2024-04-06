@@ -1,33 +1,36 @@
-body {font-family: Arial;}
-
-/* Styl dla zakładek */
-.tablinks {
-    background-color: #555;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s;
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
 }
 
-.tablinks:hover {
-    background-color: #777;
-}
-
-/* Styl dla aktywnej zakładki */
-.tablinks.active {
-    background-color: #333;
-}
-
-/* Styl dla zawartości zakładki */
-.tabcontent {
-    display: none;
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
     padding: 20px;
-    border-top: none;
+    background-color: #f4f4f4;
 }
 
-/* Styl dla aktywnej zawartości */
-.tabcontent.active {
+.tabcontent {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.tablinks {
     display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    background-color: inherit;
+}
+
+.tablinks:hover, .tablinks.active {
+    background-color: #ddd;
 }
