@@ -4,33 +4,43 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.container {
+    display: flex;
 }
 
 .sidebar {
-    background-color: #f4f4f4;
-    width: 200px;
-    position: fixed;
-    height: 100%;
+    background-color: #f0f0f0;
+    min-width: 200px;
+    height: 100vh;
+    padding: 20px;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.tablist {
+    list-style: none;
     padding: 0;
 }
 
-.sidebar ul li {
-    padding: 10px;
+.tab {
     cursor: pointer;
-}
-
-.sidebar ul li:hover {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
     background-color: #ddd;
 }
 
+.tab:hover {
+    background-color: #ccc;
+}
+
 .content {
-    margin-left: 200
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
