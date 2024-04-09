@@ -102,8 +102,9 @@
 </article>
 
          <article id="etap3" class="tabcontent">
+<<<<<<< HEAD
     <h2>Etap 2: Selekcja potencjalnych miejsc pod farmy wiatrowe</h2>
-             
+
     <p><strong>1. Selekcja odpowiednich warstw danych z BDOT dla instalacji wiatrowych</strong> </p>
              <p>
         Rozpocząłem od selekcji warstw danych z bazy BDOT, wybierając warstwę z budynkami (BUBD_A), aby stworzyć bufor o
@@ -125,6 +126,20 @@
             <p>
                 Do każdego z potencjalnych obszarów przypisałem unikalne identyfikatory, co ułatwiło dalsze analizy, w tym obliczenie odległości od linii energetycznych. Maksymalna akceptowalna odległość do linii wynosiła 800 metrów, co jest kluczowe dla zapewnienia dostępności infrastruktury niezbędnej do podłączenia instalacji wiatrowych.
             </p>
+=======
+    <h2>Etap 3: Wartości promieniowania słonecznego dla wyselekcjonowanych obszarów</h2>
+    <p>W trzecim etapie projektu skupiamy się na analizie promieniowania słonecznego, kluczowego parametru dla oceny przydatności terenów pod instalacje fotowoltaiczne. Proces ten obejmuje kilka kroków:</p>
+    <p><strong>1. Pobranie danych promieniowania dla Polski</strong> </p>
+             <p>
+        Korzystając z miesięcznych danych modelu ERA5, skoncentrowałem się na wartości "Surface downwelling longwave flux". Jest to miara energii promieniowania długofalowego docierającej do dolnej granicy atmosfery z góry, na jednostkę czasu i powierzchni, zawierająca średnią dobową wartość promieniowania dla każdego miesiąca (wliczając w to zarówno dzień, jak i noc).</p>
+
+            <p><strong>2. Przycięcie danych do badanego obszaru</strong></p>
+            <p>Dane promieniowania zostały następnie dostosowane do granic badanego obszaru, aby zapewnić dokładność analizy i skupienie się wyłącznie na interesujących nas lokalizacjach.
+            </p>
+
+    <p><strong>3. Dodanie danych promieniowania do tabeli atrybutów:</strong></p>
+            <p>Dla każdego z potencjalnych obszarów pod instalacje fotowoltaiczne dodane zostały informacje o średnim dobowym promieniowaniu dla każdego miesiąca. Pozwala to na szczegółową ocenę potencjału energetycznego każdej z rozważanych lokalizacji przez cały rok.            </p>
+>>>>>>> dda0210 (update)
 
 </article>
 
