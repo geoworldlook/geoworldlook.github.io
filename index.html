@@ -100,32 +100,7 @@
             </p>
 
 </article>
-
          <article id="etap3" class="tabcontent">
-    <h2>Etap 2: Selekcja potencjalnych miejsc pod farmy wiatrowe</h2>
-
-    <p><strong>1. Selekcja odpowiednich warstw danych z BDOT dla instalacji wiatrowych</strong> </p>
-             <p>
-        Rozpocząłem od selekcji warstw danych z bazy BDOT, wybierając warstwę z budynkami (BUBD_A), aby stworzyć bufor o
-            promieniu 800 metrów, który wyeliminuje te obszary z dalszej analizy. Dzięki temu mogłem skupić się na
-            terenach potencjalnie nadających się pod instalacje wiatrowe, uwzględniając ograniczenia przestrzenne wynikające z bliskości zabudowań.</p>
-
-            <p><strong>2. Wybór potencjalnych miejsc pod instalacje wiatrowe</strong></p>
-            <p>Podobnie jak w przypadku instalacji solarnych, dokonałem selekcji potencjalnych miejsc, korzystając z warstw PTGN_A, PTRK_A, PTTR_A, które reprezentują różne typy terenu nadające się pod instalacje OZE. Pozwoliło to na identyfikację obszarów spełniających podstawowe kryteria lokalizacyjne.
-            </p>
-
-    <p><strong>3. Integracja i analiza warstw danych</strong></p>
-            <p>Wykorzystując Numeryczny Model Terenu (NMT) pobrany z GEOPORTALU, przeprowadziłem analizę ekspozycji terenu. Celem było zidentyfikowanie obszarów z ekspozycją południową, południowo-wschodnią oraz południowo-zachodnią, które są optymalne dla instalacji fotowoltaicznych.
-            </p>
-    <p><strong>4. Filtracja i optymalizacja danych przestrzennych</strong></p>
-            <p>
-                Odrzuciłem obszary o powierzchni poniżej 10 000 m² i przeprowadziłem grupowanie obiektów, co znacznie podniosło wydajność obliczeń. Następnie, poprzez naprawę geometrii i wykonanie różnicy z terenami w odległości 800 m od budynków, zidentyfikowałem ostateczne lokalizacje spełniające wszystkie kryteria.
-            </p>
-    <p><strong>5. Przypisanie identyfikatorów i analiza dostępności infrastruktury energetycznej</strong></p>
-            <p>
-                Do każdego z potencjalnych obszarów przypisałem unikalne identyfikatory, co ułatwiło dalsze analizy, w tym obliczenie odległości od linii energetycznych. Maksymalna akceptowalna odległość do linii wynosiła 800 metrów, co jest kluczowe dla zapewnienia dostępności infrastruktury niezbędnej do podłączenia instalacji wiatrowych.
-            </p>
-
     <h2>Etap 3: Wartości promieniowania słonecznego dla wyselekcjonowanych obszarów</h2>
     <p>W trzecim etapie projektu skupiamy się na analizie promieniowania słonecznego, kluczowego parametru dla oceny przydatności terenów pod instalacje fotowoltaiczne. Proces ten obejmuje kilka kroków:</p>
     <p><strong>1. Pobranie danych promieniowania dla Polski</strong> </p>
@@ -139,9 +114,7 @@
     <p><strong>3. Dodanie danych promieniowania do tabeli atrybutów:</strong></p>
             <p>Dla każdego z potencjalnych obszarów pod instalacje fotowoltaiczne dodane zostały informacje o średnim dobowym promieniowaniu dla każdego miesiąca. Pozwala to na szczegółową ocenę potencjału energetycznego każdej z rozważanych lokalizacji przez cały rok.            </p>
 
-
 </article>
-
 
     </section>
 </div>
