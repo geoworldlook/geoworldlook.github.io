@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<div class="language-selector">
+  <button onclick="changeLanguage('pl')">PL</button>
+  <button onclick="changeLanguage('en')">EN</button>
+</div>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +29,7 @@
     <section class="content">
         <article id="wprowadzenie" class="tabcontent">
     <h2>Wprowadzenie do projektu</h2>
+            <h2 data-lang="intro">Wprowadzenie do projektu</h2>
     <p style="text-align: justify;">
         W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii,
         projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce, z naciskiem na
@@ -56,6 +61,7 @@
 
 </article>
 <article id="etap1" class="tabcontent">
+        <h2 data-lang="stage1">Etap 1: Selekcja potencjalnych miejsc pod farmy fotowoltaiczne</h2>
     <h2>Etap 1: Potencjalne miejsca na farmy fotowoltaiczne</h2>
     <p><strong>1. Selekcja odpowiednich warstw danych z BDOT:</strong> </p>
        <p> Na wstępie projektu przeprowadziłem selekcję warstw danych z bazy danych BDOT, skupiając się na identyfikacji obszarów potencjalnie nadających się pod instalacje OZE. Priorytetem były warstwy reprezentujące roślinność trawiastą (PTTR_A), tereny nieurządzone (PTGN) oraz tereny skaliste (PTRK). Ta selekcja pozwoliła na zawężenie obszaru poszukiwań do lokalizacji spełniających podstawowe kryteria przydatności pod OZE.</p>
