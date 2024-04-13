@@ -30,17 +30,18 @@
         <article id="wprowadzenie" class="tabcontent">
     <h2>Wprowadzenie do projektu</h2>
     <p style="text-align: justify;">
-        W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii,
-        projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce, z naciskiem na
-        energetykę słoneczną (farmy fotowoltaiczne) i wiatrową (farmy wiatrowe). Kluczowym elementem projektu jest wykorzystanie
-        zaawansowanych danych przestrzennych GIS oraz modeli danych o nasłonecznieniu z Copernicus ERA5 i danych o sile wiatru,
+        W obliczu globalnych wyzwań związanych ze zmianami klimatycznymi oraz rosnącą potrzebą dywersyfikacji źródeł energii.
+        Projekt koncentruje się na badaniu potencjału wykorzystania odnawialnych źródeł energii (OZE) w Polsce. Skupiam się na przedstawieniu
+      optymalnych koncepcji i proporcji związanych w hipotetycznych scenariuszachna wykorzystanie 
+    energetyki słonecznej w postaci farm fotowoltaicznych i farm wiatrowych. Kluczowym elementem projektu jest wykorzystanie
+        zaawansowanych danych przestrzennych GIS oraz modeli danych o nasłonecznieniu i sile wiatru z Copernicus ERA5,
         aby zlokalizować optymalne obszary pod kątem technologicznym, ekonomicznym i środowiskowym do rozwijania infrastruktury OZE.
     </p>
     <p style="text-align: justify;">
         Projekt ma na celu kompleksową
         analizę różnych scenariuszy wykorzystania OZE
         , uwzględniając aktualne przepisy prawne, koszty budowy
-        , rentowność oraz efektywność energetyczną. Poszukiwane obszary muszą odpowiadać nie tylko na potrzeby energetyczne kraju,
+      , rentowność oraz efektywność energetyczną. Poszukiwane obszary muszą odpowiadać nie tylko na potrzeby energetyczne kraju,
         ale także harmonizować z lokalnymi uwarunkowaniami środowiskowymi i społecznymi.
     </p>
     <p style="text-align: justify;">
@@ -70,7 +71,7 @@
     <p><strong>4. Konwersja danych rastrowych na wektorowe:</strong> </p>
     <p>Przekształciłem dane rastrowe dotyczące ekspozycji terenu na format wektorowy, co umożliwiło dokładniejszą analizę i selekcję obszarów spełniających kryteria ekspozycji tj. południowo-wschodnie, południowe, południowo-zachodnie (215-315).</p>
     <p><strong>5. Filtracja danych pod kątem ekspozycji i powierzchni:</strong></p>
-    <p>Zastosowałem filtrację danych, aby wyselekcjonować tereny spełniające kryteria ekspozycji oraz minimalną powierzchnię 2 hektary, co jest kluczowe dla ekonomicznej wydajności projektów OZE.</p>
+    <p>Zastosowałem filtrację danych, aby wyselekcjonować tereny spełniające kryteria ekspozycji oraz minimalną powierzchnię 2 hektarów, co jest kluczowe dla ekonomicznej wydajności projektów OZE.</p>
     <p><strong>6. Analiza dostępności infrastruktury energetycznej:</strong></p>
     <p>W kolejnym kroku wczytałem warstwę BDOT zawierającą linie wysokiego napięcia (SULN_L), aby zidentyfikować linie średniego napięcia jako potencjalne punkty podłączenia instalacji OZE.</p>
     <p><strong>7. Obliczenie odległości do linii średniego napięcia:</strong></p>
@@ -108,7 +109,7 @@
     <p>W trzecim etapie projektu skupiamy się na analizie promieniowania słonecznego, kluczowego parametru dla oceny przydatności terenów pod instalacje fotowoltaiczne. Proces ten obejmuje kilka kroków:</p>
     <p><strong>1. Pobranie danych promieniowania dla Polski</strong> </p>
              <p>
-        Korzystając z miesięcznych danych modelu ERA5, skoncentrowałem się na wartości "Surface downwelling longwave flux". Jest to miara energii promieniowania długofalowego docierającej do dolnej granicy atmosfery z góry, na jednostkę czasu i powierzchni, zawierająca średnią dobową wartość promieniowania dla każdego miesiąca (wliczając w to zarówno dzień, jak i noc).</p>
+        Korzystając z miesięcznych danych modelu ERA5, skoncentrowałem się na wartości "Surface downwelling longwave wave". Jest to miara energii promieniowania długofalowego docierającej do dolnej granicy atmosfery z góry, na jednostkę czasu i powierzchni, zawierająca średnią dobową wartość promieniowania dla każdego miesiąca (wliczając w to zarówno dzień, jak i noc).</p>
 
             <p><strong>2. Przycięcie danych do badanego obszaru</strong></p>
             <p>Dane promieniowania zostały następnie dostosowane do granic badanego obszaru, aby zapewnić dokładność analizy i skupienie się wyłącznie na interesujących nas lokalizacjach.
